@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+
+APP="$1"
+
+echo "-----> Reset mtime on source files..."
+find ./ | grep -v .git | xargs touch -t 200001010000.00
