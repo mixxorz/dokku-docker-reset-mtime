@@ -15,10 +15,21 @@ The solution is based off [this StackOverflow question](http://stackoverflow.com
 Here's the relevant [Docker PR](https://github.com/docker/docker/pull/12031)
 on the issue.
 
-## Installation
+## requirements
 
-```bash
-git clone https://github.com/mixxorz/dokku-docker-reset-mtime.git /var/lib/dokku/plugins/reset-mtime
+- dokku 0.4.0+
+- docker 1.6.x
+
+## installation
+
+```shell
+# on 0.3.x
+cd /var/lib/dokku/plugins
+git clone https://github.com/mixxorz/dokku-docker-reset-mtime.git reset-mtime
+dokku plugins-install
+
+# on 0.4.x
+dokku plugin:install https://github.com/mixxorz/dokku-docker-reset-mtime.git  reset-mtime
 ```
 
 That's all folks.
