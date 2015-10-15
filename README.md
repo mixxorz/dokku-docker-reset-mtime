@@ -1,5 +1,7 @@
 # dokku-docker-reset-mtime
 
+*You don't need this plugin if you have docker 1.8.x +*
+
 Simply resets the mtime (modified time) metadata on your source files to a set
 datetime before building the image with docker. I made this to work around
 docker's caching system taking into account the modified time when checking if
