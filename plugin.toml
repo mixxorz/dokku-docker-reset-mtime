@@ -1,0 +1,4 @@
+[plugin]
+description = "dokku plugin to reset mtime metadata on source files"
+version = "1.0.0"
+[plugin.config]
